@@ -1,4 +1,4 @@
-apiVersion: platform.shopco.internal/v1alpha1
+apiVersion: platform.idp.internal/v1alpha1
 kind: ServerlessApp
 metadata:
   name: hello-api
@@ -6,5 +6,5 @@ metadata:
 spec:
   target: floci
   artifact:
-    bucket: shopco-artifacts
+    bucket: idp-artifacts
     key: hello-api/b70599c38997c56d.zip

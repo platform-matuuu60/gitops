@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: team-shop
   labels:
-    shopco.internal/team: shop
+    idp.internal/team: shop

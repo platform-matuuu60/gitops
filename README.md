@@ -1,4 +1,4 @@
-# ShopCo GitOps
+# IDP GitOps
 
 Desired state of every team's workloads. ArgoCD syncs this repository into the cluster; the platform APIs (defined in [platform](https://github.com/platform-matuuu60/platform)) turn each request into real infrastructure.
 
@@ -16,7 +16,7 @@ teams/
 ## Example
 
 ```yaml
-apiVersion: platform.shopco.internal/v1alpha1
+apiVersion: platform.idp.internal/v1alpha1
 kind: ServerlessApp
 metadata:
   name: hello-api
@@ -24,7 +24,7 @@ metadata:
 spec:
   target: floci            # floci | aws
   artifact:
-    bucket: shopco-artifacts
+    bucket: idp-artifacts
     key: hello-api/<content-hash>.zip   # published by CI
 ```
 
