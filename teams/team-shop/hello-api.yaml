@@ -1,0 +1,10 @@
+apiVersion: platform.shopco.internal/v1alpha1
+kind: ServerlessApp
+metadata:
+  name: hello-api
+  namespace: team-shop
+spec:
+  target: floci
+  artifact:
+    bucket: shopco-artifacts
+    key: hello-api/b70599c38997c56d.zip
