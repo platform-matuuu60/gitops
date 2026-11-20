@@ -20,7 +20,7 @@ apiVersion: platform.idp.internal/v1alpha1
 kind: ServerlessApp
 metadata:
   name: hello-api
-  namespace: team-shop
+  namespace: team-demo
 spec:
   target: floci            # floci | aws
   artifact:
@@ -31,5 +31,5 @@ spec:
 The app's URL is reported in `status.url`:
 
 ```bash
-kubectl -n team-shop get serverlessapp hello-api
+kubectl -n team-demo get serverlessapp hello-api
 ```

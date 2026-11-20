@@ -2,7 +2,7 @@ apiVersion: platform.idp.internal/v1alpha1
 kind: ServerlessApp
 metadata:
   name: hello-api
-  namespace: team-shop
+  namespace: team-demo
 spec:
   target: floci
   artifact:
