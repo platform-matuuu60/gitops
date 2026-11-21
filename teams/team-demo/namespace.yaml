@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: team-demo
   labels:
-    idp.internal/team: demo
+    idp.internal/team: team-demo
