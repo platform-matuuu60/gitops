@@ -1,0 +1,11 @@
+apiVersion: platform.idp.internal/v1alpha1
+kind: ServerlessApp
+metadata:
+  name: demo-api
+  namespace: team-demo
+spec:
+  target: floci
+  artifact:
+    bucket: idp-artifacts
+    # Stable key: the service CI uploads every build here and updates the function code.
+    key: demo-api/latest.zip
