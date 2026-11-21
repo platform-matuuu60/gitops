@@ -1,0 +1,13 @@
+apiVersion: platform.idp.internal/v1alpha1
+kind: ServerlessWorker
+metadata:
+  name: orders-worker
+  namespace: platform-team
+spec:
+  target: floci
+  batchSize: 10
+  maxReceiveCount: 3
+  artifact:
+    bucket: idp-artifacts
+    # Stable key: the worker CI uploads every build here and updates the function code.
+    key: orders-worker/latest.zip
