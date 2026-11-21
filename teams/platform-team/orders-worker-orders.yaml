@@ -1,0 +1,15 @@
+apiVersion: platform.idp.internal/v1alpha1
+kind: Table
+metadata:
+  name: orders-worker-orders
+  namespace: platform-team
+  labels:
+    # The app composition looks up its tables by this label to inject the table name.
+    platform.idp.internal/app: orders-worker
+spec:
+  target: floci
+  app: orders-worker
+  access: readwrite
+  partitionKey:
+    name: id
+    type: S
